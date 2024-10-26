@@ -1,0 +1,114 @@
+#glitch {
+    position: relative;
+    color: #f6d8d5;font-weight: bold;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 
+                 0 0 1px rgba(255, 255, 255, 0.6), 
+                 0 0 8px rgba(255, 255, 255, 0.4);
+    /*font-size: 150px;*/
+}
+#shiny
+{
+    position: relative;
+    color: #f6d8d5;font-weight: bold;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 
+                 0 0 1px rgba(255, 255, 255, 0.6), 
+                 0 0 3px rgba(255, 255, 255, 0.4);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Cover the entire viewport */
+    display: flex; /* Use flexbox to center */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensures it's on top */
+}
+body {
+    background: linear-gradient(-45deg, #22d3ee, #a78bfa, #ec4899, #fbbf24);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+#register
+{
+    background: linear-gradient(-45deg, #22d3ee, #a78bfa, #ec4899, #fbbf24);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#glitch:hover {
+    opacity: 0.9;
+    text-shadow: 0px -5px #ec2225, 0px 5px #00c2cb, -5px 0px #ec2225, 5px 0px #00c2cb;
+}
+
+#glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e0ffff;
+}
+
+#glitch:hover::before {
+    animation: animate 12ms ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        top: -7px;
+        left: 0;
+        opacity: 1;
+    }
+
+    20% {
+        top: 0;
+        left: -10px;
+        opacity: 0.7;
+    }
+
+    40% {
+        top: 7px;
+        left: 0;
+        opacity: 0.2;
+    }
+
+    60% {
+        top: 0;
+        left: 10px;
+        opacity: 0.3;
+    }
+
+    80% {
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+}
+
+/* Optional: Define CSS variables for easier font usage */
+:root {
+    --font-oxanium: 'Oxanium', cursive;
+    --font-spacegrotesk: 'Space Grotesk';
+}
