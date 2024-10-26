@@ -112,3 +112,134 @@ body {
     --font-oxanium: 'Oxanium', cursive;
     --font-spacegrotesk: 'Space Grotesk';
 }
+/* Base Styles for ARGONYX Theme */
+:root {
+    --font-oxanium: 'Oxanium', cursive;
+    --font-spacegrotesk: 'Space Grotesk';
+  }
+  
+  /* Mobile (max-width: 480px) */
+  @media (min-width: 360px)and (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+      padding: 4px;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+      padding: 2px;
+    }
+  
+    .mockup-code {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .flex-col.items-center {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    /* Hackathon Tracks */
+    .card img {
+      height: 150px;
+    }
+  
+    .text-4xl, .text-5xl {
+      font-size: 1.5rem;
+      padding: 2px;
+    }
+  
+    /* Event Schedule Icons */
+    .material-icons {
+      font-size: 2rem;
+    }
+    .alllogos img{
+        height: 1rem;
+    }
+    .navbar a
+    {
+        margin-left: -10px;
+    }
+    .cont
+    {
+        font-size: 1rem;
+    }
+    .mainthing
+    {
+        margin-bottom: 1rem;
+    }
+  }
+  
+  /* Tablet (max-width: 768px) */
+  @media(min-width : 480px) and (max-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+      padding: 6px;
+    }
+  
+    .hero-content p {
+      font-size: 1.25rem;
+      padding: 4px;
+    }
+  
+    .mockup-code {
+      margin: 2rem;
+      padding: 1.5rem;
+    }
+  
+    /* Event Schedule Layout */
+    .flex {
+      flex-direction: column;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    /* Hackathon Tracks */
+    .card img {
+      height: 180px;
+    }
+  
+    .text-4xl, .text-5xl {
+      font-size: 2rem;
+    }
+  
+    /* Event Schedule Icons */
+    .material-icons {
+      font-size: 2.5rem;
+    }
+    .alllogos
+    {
+        flex-direction: row;
+    }
+  }
+  
+  /* Laptops and Desktops (min-width: 1024px) */
+  
+
+  /* Overlay for small screens */
+#sizeAlertOverlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    backdrop-filter: blur(8px); /* Apply blur effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Ensure it's on top of all other content */
+}
+
+#sizeAlertOverlay .alertBox {
+    background: linear-gradient(-45deg, #22d3ee, #a78bfa, #ec4899, #fbbf24);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+    font-family: var(--font-spacegrotesk);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
