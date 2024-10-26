@@ -32,7 +32,7 @@ const closeButton = document.getElementById("closeButton");
     document.addEventListener("DOMContentLoaded", () => {
         invitationId.textContent = generateInvitationId(); // Set random invitation ID
         function checkScreenSize() {
-            if (window.innerWidth <= 360) {
+            if (window.innerWidth <= 180) {
                 // Display the overlay and prevent scrolling
                 document.getElementById("sizeAlertOverlay").style.display = "flex";
                 document.body.style.overflow = "hidden";

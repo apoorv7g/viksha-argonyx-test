@@ -118,6 +118,87 @@ body {
     --font-spacegrotesk: 'Space Grotesk';
   }
   
+  @media(min-width:180px)and (max-width:360px) {
+    .hero h1 {
+        font-size: 1.6rem;
+        padding: 4px;
+      }
+    
+      .hero-content p {
+        font-size: 0.7rem;
+        padding: 2px;
+      }
+    
+      .mockup-code {
+        margin: 0.3rem;
+        padding: 0.3rem;
+        min-width: 10rem;
+      }
+    
+      .flex-col.items-center {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    
+      /* Hackathon Tracks */
+      .card img {
+        height: 150px;
+      }
+    
+      .text-4xl, .text-5xl {
+        font-size: 1.5rem;
+        padding: 2px;
+      }
+    
+      /* Event Schedule Icons */
+      .material-icons {
+        font-size: 2rem;
+      }
+      .alllogos img{
+          height: 0.6rem;
+      }
+      .navbar a
+      {
+          font-size: 0.8rem;
+          margin-left: -10px;
+      }
+      .cont
+      {
+          font-size: 0.5rem;
+      }
+      .mainthing
+      {
+          margin-bottom: 0.5rem;
+      }
+      code{
+          font-size: 10px ;
+      }
+      .gap-6 {
+        gap: 0.6rem;
+      }
+      .h-8{
+        height: 1rem;
+      }
+      .hero-content button {
+        font-size: 0.7rem;
+      }
+      .btn-lg {
+        height: 2rem;
+        min-height: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        /* font-size: 1.125rem; */
+      }
+      .datesthing{
+        font-size: 0.7rem;
+      }
+      .p-4 {
+        padding: 0.5rem;
+      }
+      .card img{
+        height: 100px;
+      }
+  }
   /* Mobile (max-width: 480px) */
   @media (min-width: 360px)and (max-width: 480px) {
     .hero h1 {
@@ -169,6 +250,9 @@ body {
     {
         margin-bottom: 1rem;
     }
+    code{
+        font-size: 19px ;
+    }
   }
   
   /* Tablet (max-width: 768px) */
@@ -212,6 +296,9 @@ body {
     {
         flex-direction: row;
     }
+    code{
+        font-size: 19px ;
+    }
   }
   
   /* Laptops and Desktops (min-width: 1024px) */
@@ -235,11 +322,11 @@ body {
 #sizeAlertOverlay .alertBox {
     background: linear-gradient(-45deg, #22d3ee, #a78bfa, #ec4899, #fbbf24);
     color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
-    max-width: 300px;
+    max-width: 150px;
     text-align: center;
     font-family: var(--font-spacegrotesk);
-    font-size: 1.2rem;
+    font-size: 0.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
